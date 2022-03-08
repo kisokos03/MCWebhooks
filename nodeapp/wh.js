@@ -1,25 +1,6 @@
 const fs = require("fs");
 const { WebhookClient, MessageEmbed } = require("discord.js");
-var webhookURL;
-
-//const webhookURL = "https://discord.com/api/webhooks/949479892729339915/NG5es_m7r-ivS9io0gTvB-2us4ZFIU6hIQRjnIm1nyJAb2tsux9H99eTaSHA1C6OzWHj";
-
-// try {
-//     if (JSON.parse(fs.readFileSync("C:\\Users\\bagim\\OneDrive\\Documents\\server\\plugins\\webhooks\\MCWebhook.json").webhookURL.startsWith("https://discord.com"))) {
-//         main();
-//     } else {
-//         console.log("invalid URL");
-
-//     }
-
-// } catch (error) {
-//     console.log(process.cwd())
-//     console.log("invalid JSON");
-//     console.log(JSON.parse(fs.readFileSync("C:\\Users\\bagim\\OneDrive\\Documents\\server\\plugins\\webhooks\\MCWebhook.json")))
-//     initMCWebhookJSON();
-//     console.log(error);
-//     process.exit(1);
-// }
+// var webhookURL;
 
 function initMCWebhookJSON() {
     var InitJSON = { "statusMessageID": "none", "membersMessageID": "none", "status": "1", "initialized": "true", "webhookURL": "" };
@@ -144,13 +125,14 @@ function main() {
 }
 
 
+
 try {
+    //file read
     if (process.argv.length < 3) {
         throw 0;
     } else if (process.argv[2].length == 0) {
         throw 0;
     }
-    //file read
 
     const webhookData = fs.readFileSync(".\\MCWebhook.json");
     console.log("successfully read file")
@@ -176,6 +158,7 @@ try {
 
         } catch (error) {
             switch (error) {
+                //url check
                 case 1:
                     console.log("Please set the discord webhook URL in MCWebhooks.json")
                     break;
@@ -190,15 +173,18 @@ try {
         }
 
     } catch (error) {
+        //json parse
         console.log(error);
         console.log("JSON parse failed, writing new file");
         initMCWebhookJSON();
     }
 } catch (error) {
+    //args
     if (error == 0) {
         console.log("no args, exiting")
         process.exit(1);
     } else {
+        //file read
         console.log(error)
         console.log("file read failed, writing new file")
         initMCWebhookJSON();
