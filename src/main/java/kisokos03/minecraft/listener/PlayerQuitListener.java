@@ -13,7 +13,6 @@ import org.bukkit.event.EventHandler;
 
 public class PlayerQuitListener implements Listener {
 
-    //private Webhooks mainPlugin;
     NodeCommands Node = new NodeCommands();
 
 
@@ -21,12 +20,6 @@ public class PlayerQuitListener implements Listener {
     @EventHandler
     public void onPlayerQuit(PlayerQuitEvent e) {
         Bukkit.getLogger().info("playerQuitEvent");
-        // Bukkit.getScheduler().runTaskLater(mainPlugin, new Runnable() {
-        //     public void run() {
-        //         Node.sendWebhook("members", Integer.toString(Bukkit.getServer().getOnlinePlayers().size()));
-        //         Bukkit.getServer().getLogger().info("removed?");
-        //     }
-        // }, 0L);
         Bukkit.getScheduler().runTaskLater(Bukkit.getPluginManager().getPlugin("discordWebhooks"), new Runnable(){
             public void run(){
                 Node.sendWebhook("members", Integer.toString((Bukkit.getServer().getOnlinePlayers().size())));
