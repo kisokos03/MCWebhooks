@@ -25,6 +25,7 @@ public class PlayerQuitListener implements Listener {
                 Node.sendWebhook("members", Integer.toString((Bukkit.getServer().getOnlinePlayers().size())));
             }
         }, 40L);
+        //checks players 40 ticks after quitEvent, as doing so immediately still returns value as if they were online
 
 
     }
