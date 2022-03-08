@@ -2,10 +2,10 @@ const fs = require("fs");
 const { WebhookClient, MessageEmbed } = require("discord.js");
 var webhookURL;
 
-//const webhookURL = "https://discord.com/api/webhooks/949479892729339915/NG5es_m7r-ivS9io0gTvB-2us4ZFIU6hIQRjnIm1nyJAb2tsux9H99eTaSHA1C6OzWHj";
+
 
 // try {
-//     if (JSON.parse(fs.readFileSync("C:\\Users\\bagim\\OneDrive\\Documents\\server\\plugins\\webhooks\\MCWebhook.json").webhookURL.startsWith("https://discord.com"))) {
+//     if (JSON.parse(fs.readFileSync("MCWebhook.json").webhookURL.startsWith("https://discord.com"))) {
 //         main();
 //     } else {
 //         console.log("invalid URL");
