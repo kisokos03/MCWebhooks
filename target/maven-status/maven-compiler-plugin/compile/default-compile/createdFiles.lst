@@ -1,7 +1,0 @@
-kisokos03\minecraft\commands\WebhookInitializerCommand.class
-kisokos03\minecraft\commands\CheckOnlinePlayersCommand.class
-kisokos03\minecraft\NodeCommands.class
-kisokos03\minecraft\listener\PlayerJoinListener.class
-kisokos03\minecraft\listener\PlayerQuitListener.class
-kisokos03\minecraft\Webhooks.class
-kisokos03\minecraft\listener\PlayerQuitListener$1.class
