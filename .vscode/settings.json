@@ -1,0 +1,6 @@
+{
+    "java.configuration.updateBuildConfiguration": "disabled",
+    "yaml.schemas": {
+        "https://json.schemastore.org/bukkit-plugin.json": "file:///c%3A/Users/bagim/OneDrive/Documents/pro%20gramings%20and%20shits/coffee/maven/mc1/plugin.yml"
+    }
+}

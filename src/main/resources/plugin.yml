@@ -1,0 +1,11 @@
+main: kisokos03.minecraft.Webhooks
+name: discordWebhooks
+version: 0.1.2
+api-version: 1.18
+
+commands:
+  initializeWebhook:
+    description: Initialises the discord webhook
+  checkOnlinePlayers:
+    description: double checks just in case
+    
