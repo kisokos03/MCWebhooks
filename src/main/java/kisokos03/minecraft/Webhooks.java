@@ -41,7 +41,7 @@ public class Webhooks extends JavaPlugin {
         }
 
         // Node.sendWebhook("enable");
-        // this.getCommand("initializeWebhook").setExecutor(new
+        // this.getCommand("initializeWebhook").setExecutor(new 
         // WebhookInitializerCommand());
         // this.getCommand("checkOnlinePlayers").setExecutor(new
         // CheckOnlinePlayersCommand());
