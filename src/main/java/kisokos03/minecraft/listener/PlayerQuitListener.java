@@ -1,7 +1,7 @@
 package kisokos03.minecraft.listener;
 
-import kisokos03.minecraft.NodeCommands;
 import kisokos03.minecraft.Webhooks;
+import kisokos03.minecraft.util.NodeCommands;
 
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerQuitEvent;

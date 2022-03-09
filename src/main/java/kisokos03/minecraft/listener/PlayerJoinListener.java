@@ -1,8 +1,10 @@
 package kisokos03.minecraft.listener;
 
-import kisokos03.minecraft.NodeCommands;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
+
+import kisokos03.minecraft.util.NodeCommands;
+
 import org.bukkit.Bukkit;
 import org.bukkit.event.EventHandler;
 
