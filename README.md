@@ -1,5 +1,4 @@
 # MCWebhooks
- PaperMC plugin for clean functional webhooks to show server stats and info.
 
 Currently a WIP, base functionality is present. 
 
