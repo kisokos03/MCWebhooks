@@ -1,15 +1,11 @@
 package kisokos03.minecraft.listener;
 
-import kisokos03.minecraft.Webhooks;
 import kisokos03.minecraft.util.NodeCommands;
 
-import org.bukkit.event.Listener;
-import org.bukkit.event.player.PlayerQuitEvent;
-import org.bukkit.plugin.Plugin;
-
-import org.jetbrains.annotations.NotNull;
 import org.bukkit.Bukkit;
+import org.bukkit.event.Listener;
 import org.bukkit.event.EventHandler;
+import org.bukkit.event.player.PlayerQuitEvent;
 
 public class PlayerQuitListener implements Listener {
 
