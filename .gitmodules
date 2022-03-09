@@ -1,0 +1,3 @@
+[submodule "MCWebhooksNode"]
+	path = MCWebhooksNode
+	url = https://github.com/kisokos03/MCWebhooksNode
