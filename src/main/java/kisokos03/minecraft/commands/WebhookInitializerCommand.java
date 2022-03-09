@@ -1,9 +1,11 @@
 package kisokos03.minecraft.commands;
 
-import kisokos03.minecraft.NodeCommands;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
+
+import kisokos03.minecraft.util.NodeCommands;
+
 import org.bukkit.Bukkit;
 
 public class WebhookInitializerCommand implements CommandExecutor {
