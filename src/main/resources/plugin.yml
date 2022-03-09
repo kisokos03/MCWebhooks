@@ -8,4 +8,7 @@ commands:
     description: Initialises the discord webhook
   checkOnlinePlayers:
     description: double checks just in case
+  forceNodeAppDownload:
+    description: Forcefully removes and reinstalls Node app.
+    
     
